@@ -54,7 +54,21 @@
 ![](https://i.imgur.com/9fna0ry.png)
 
 ## XGBoost(eXtreme Gradient Boosting)
-- Gradient Boosting의 순차적 학습으로 인해 오래 걸리던 시간을 병렬 학습을 가능하게 하여 극복하고자 한 알고리즘
-- 
+- Gradient Boosting의 순차적 학습으로 인해 오래 걸리던 시간의 문제를 해결하고자 병렬 학습을 가능하도록 구현한 알고리즘
+- 회귀, 분류 문제를 모두 지원하며, 성능과 자원 효율이 좋아 많이 사용
+### 장점
+- 높은 예측 성능
+- 빠른 수행 시간
+- 규제
+- 가지치기
+- 내장된 교차 검증
+- 결측치 자체 처리
 
 # Stacking
+- 여러 모델의 예측 값을 최종 모델의 학습 데이터로 사용하여 예측하는 방법
+- 예를들면
+	- KNN, Logistic Regression, XGBoost 모델을 사용해 4종류 예측 값을 구한 후
+	- 이 예측 값을 최종 모델인 Randomforest 학습 데이터로 사용 
+- 현실 모델에서 많이 사용되지 않으며, 캐글(Kaggle)같은 미세한 성능 차이로 승부를 결정하는 대회에서 사용됨
+- 기본 모델로 4개 이상 선택해야 좋은 결과를 기대할 수 있음
+![](https://i.imgur.com/D30O8cU.png)
