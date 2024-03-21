@@ -53,6 +53,10 @@
 - 대표 부스팅 알고리즘 : XGBoost, LightGBM
 ![](https://i.imgur.com/9fna0ry.png)
 
+## Gradient Boosting
+![](https://i.imgur.com/1omWZJD.png)
+
+
 ## XGBoost(eXtreme Gradient Boosting)
 - Gradient Boosting의 순차적 학습으로 인해 오래 걸리던 시간의 문제를 해결하고자 병렬 학습을 가능하도록 구현한 알고리즘
 - 회귀, 분류 문제를 모두 지원하며, 성능과 자원 효율이 좋아 많이 사용
