@@ -33,3 +33,4 @@ Smotic kernel
 토큰으로 가격 산정
 
 
+gpt 32k 
