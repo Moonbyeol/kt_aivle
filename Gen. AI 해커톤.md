@@ -21,3 +21,14 @@ open ai 사용
 
 3.5 vs 4
 이면 3.5가 가산점
+
+
+
+LangChain 
+Smotic kernel
+
+
+
+
+
+
