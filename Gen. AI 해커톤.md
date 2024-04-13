@@ -6,6 +6,12 @@ open ai 사용
 1. 엔샷
 	- 알려주고 학습 시키는 것
 2. 파인 튜닝
-	- 
-3. 레그
+	- 문제점
+		- 비용 = GPU
+		- 운영
+		- 모델의 업데이트
+		- 호스트
+3. RAG(Retrieval Augmented Generation)
+
+
 
