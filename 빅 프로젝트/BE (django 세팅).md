@@ -15,3 +15,5 @@
 - 가상환경 삭제 conda env remove -n 가상환경이름
 ```
 
+    **- Django 설치 명령어 : pip install django**
+   
