@@ -17,7 +17,7 @@ pip install alembic
 ```
 alembic init migrations # alembic 초기화
 
-uvicorn main:app --reload # 실
+uvicorn main:app --relaod --port 8000 # 실행
 
 ```
 
