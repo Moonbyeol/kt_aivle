@@ -21,4 +21,3 @@ uvicorn main:app --reload # 실행
 
 ```
 
-
