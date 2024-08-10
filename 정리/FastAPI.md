@@ -62,9 +62,7 @@
 
 # Fastapi
 
-- main.py 에 만듬
-
-## 가상 환경 세팅
+## 가상 환경
 ### 1. 가상 환경 생성
 1) 생성
 ```python
@@ -89,6 +87,7 @@ pydantic[email]
 pip install requirements.txt
 ```
 
+## 아래는 전부 main.py에 작성 
 ## 라이브러리
 ```python
 from fastapi import FastAPI, Depends, HTTPException
