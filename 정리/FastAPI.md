@@ -140,6 +140,24 @@ class Comment(Base):
     images = relationship("Image", back_populates="comment")
 ```
 
+
+## Pydantic 모델 정의
+```python
+# 프론트엔드에서 받아올 데이터의 타입을 제약하기 위해 pydantic을 사용합니다.
+# Pydantic을 사용하면 데이터 유효성 검사를 자동으로 수행하여, 잘못된 데이터가 들어오는 것을 방지할 수 있습니다.
+class QnaCreate(BaseModel):
+    email: EmailStr
+    title: str
+    content: str
+
+class QnaUpdate(BaseModel):
+    qna_id: int
+    email: EmailStr
+    title: str
+    content: Optional[str] = None # 빈 값으로도 들어올 수 있음
+```
+
+
 ## CRUD(Create,Read,Update,Delete) 함수 정의
 ```python
 # QnA 데이터를 생성하는 함수입니다.
@@ -179,21 +197,6 @@ def delete_qna(qna: QnA, db: Session):
 
 ```
 
-## Pydantic 모델 정의
-```python
-# 프론트엔드에서 받아올 데이터의 타입을 제약하기 위해 pydantic을 사용합니다.
-# Pydantic을 사용하면 데이터 유효성 검사를 자동으로 수행하여, 잘못된 데이터가 들어오는 것을 방지할 수 있습니다.
-class QnaCreate(BaseModel):
-    email: EmailStr
-    title: str
-    content: str
-
-class QnaUpdate(BaseModel):
-    qna_id: int
-    email: EmailStr
-    title: str
-    content: optional[str] = None # 빈 값으로도 들어올 수 있음
-```
 
 ## API 엔드포인트 정의
 ```python
