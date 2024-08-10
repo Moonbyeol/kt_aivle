@@ -274,6 +274,8 @@ async def delete_qna(qna: QnaUpdate, db: Session = Depends(get_db)):
     delete_qna(db_qna, db)
     return {"detail": "delete_success"}
 ```
+
+#### HTTP Method
 - **GET**: 데이터를 가져옵니다.
 - **POST**: 데이터를 추가합니다.
 - **PUT**: 데이터를 수정합니다.
