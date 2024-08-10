@@ -64,6 +64,22 @@
 
 - main.py 에 만듬
 
+## 가상 환경 세팅
+### 1. 가상 환경 생성
+```python
+conda create -n 가상환경명 python=3.11
+```
+### 2. requirements 작성 후 실행
+```python
+uvicorn
+fastapi
+sqlalchemy
+pymysql
+pydantic
+pydantic[email]
+```
+
+
 ## 라이브러리
 ```python
 from fastapi import FastAPI, Depends, HTTPException
