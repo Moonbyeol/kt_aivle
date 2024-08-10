@@ -89,8 +89,8 @@ pip install -r requirements.txt
 
 
 ----------------
-## 아래는 전부 main.py에 작성 
-## 라이브러리
+## main.py 작성 
+### 라이브러리
 ```python
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy import create_engine
@@ -103,14 +103,14 @@ from typing import Optional
 ```
 
 
-## FastAPI 애플리케이션 생성
+### FastAPI 애플리케이션 생성
 ```python
 # 기본 WAS 설정
 # FastAPI 앱을 생성합니다. 이는 웹 애플리케이션 서버를 설정하고 API 엔드포인트를 정의하는 데 사용됩니다.
 app = FastAPI()
 ```
 
-## 데이터베이스
+### 데이터베이스
 ```python
 ## 데이터베이스 설정
 # SQLAlchemy 엔진을 생성하여 MySQL 데이터베이스에 연결합니다.
@@ -167,7 +167,7 @@ class Comment(Base):
 ```
 
 
-## Pydantic 모델 정의
+### Pydantic 모델 정의
 ```python
 # 프론트엔드에서 받아올 데이터의 타입을 제약하기 위해 pydantic을 사용합니다.
 # Pydantic을 사용하면 데이터 유효성 검사를 자동으로 수행하여, 잘못된 데이터가 들어오는 것을 방지할 수 있습니다.
@@ -184,7 +184,7 @@ class QnaUpdate(BaseModel):
 ```
 
 
-## CRUD(Create,Read,Update,Delete) 함수 정의
+### CRUD(Create,Read,Update,Delete) 함수 정의
 ```python
 # QnA 데이터를 생성하는 함수입니다.
 # 데이터베이스 세션을 사용하여 새로운 QnA 데이터를 추가합니다.
@@ -224,7 +224,7 @@ def delete_qna(qna: QnA, db: Session):
 ```
 
 
-## API 엔드포인트 정의
+### API 엔드포인트 정의
 ```python
 # 각 CRUD 기능을 제공하는 API 엔드포인트를 정의
 # QnA 데이터를 업로드하는 API 엔드포인트입니다.
