@@ -84,7 +84,7 @@ pydantic[email]
 ```
 2) requirements.txt  실행
 ```python
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 
