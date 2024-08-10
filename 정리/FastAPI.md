@@ -265,12 +265,6 @@ uvicorn main:app --reload
 
 
 
-# Radis
-
-- 추가 예정
-
-# AWS 배포
-- 추가 예정
 
 # Langserve
 - 추가 예정
