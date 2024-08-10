@@ -66,10 +66,16 @@
 
 ## 가상 환경 세팅
 ### 1. 가상 환경 생성
+1) 생성
 ```python
 conda create -n 가상환경명 python=3.11
 ```
-### 2. requirements 작성 후 실행
+2) 실행
+```python
+conda activate 가상환경명
+```
+### 2. requirements
+1) requirements.txt 작성
 ```python
 uvicorn
 fastapi
@@ -78,7 +84,10 @@ pymysql
 pydantic
 pydantic[email]
 ```
-
+2) requirements.txt  실행
+```python
+pip install requirements.txt
+```
 
 ## 라이브러리
 ```python
