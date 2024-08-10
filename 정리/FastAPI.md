@@ -87,6 +87,8 @@ pydantic[email]
 pip install requirements.txt
 ```
 
+
+----------------
 ## 아래는 전부 main.py에 작성 
 ## 라이브러리
 ```python
